@@ -10,7 +10,7 @@
 # Open with VSCode devcontainer
 $ cd ./{design_pattern_name}/
 $ python main.py
-# See the output
+# See the output.
 ```
 
 Used abstractmethod to express interface object.
