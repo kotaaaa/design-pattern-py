@@ -2,36 +2,40 @@ from strategy import Strategy
 
 
 class Player:
+    wincount = 0
+    losecount = 0
+    gamecount = 0
+
     def __init__(self, name, strategy):
         self.name = name
         self.strategy = strategy
 
     def next_hand(self):
-        return self.stratery.next_hand()
+        return self.strategy.next_hand()
 
     def win(self):
-        self.strategy(true)
-        wincount += 1
-        gamecount += 1
+        self.strategy.study(True)
+        self.wincount += 1
+        self.gamecount += 1
 
     def lose(self):
-        self.strategy(false)
-        losecount += 1
-        gamecount += 1
+        self.strategy.study(False)
+        self.losecount += 1
+        self.gamecount += 1
 
     def even(self):
-        gamecount += 1
+        self.gamecount += 1
 
     def to_string(self):
         return (
             "["
-            + name
+            + self.name
             + ":"
-            + gamecount
+            + str(self.gamecount)
             + " games, "
-            + wincount
+            + str(self.wincount)
             + " win, "
-            + losecount
+            + str(self.losecount)
             + " lose"
             + "]"
         )
