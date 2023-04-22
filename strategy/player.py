@@ -30,7 +30,7 @@ class Player:
         return (
             "["
             + self.name
-            + ":"
+            + ": "
             + str(self.gamecount)
             + " games, "
             + str(self.wincount)
