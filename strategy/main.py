@@ -30,7 +30,7 @@ def main():
             print("Even...")
             player1.even()
             player2.even()
-    print("Total result:")
+    print("Total result: ")
     print(player1.to_string())
     print(player2.to_string())
 
