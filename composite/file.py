@@ -1,7 +1,10 @@
+from entry import Entry
+
+
 class File(Entry):
     def __init__(self, name, size):
-        self.name = ""
-        self.size = 1
+        self.name = name
+        self.size = size
 
     def get_name(self):
         return self.name
@@ -10,4 +13,4 @@ class File(Entry):
         return self.size
 
     def _print_list(self, prefix):
-        print(prefix, +"/" + to_string())
+        print(prefix + "/" + self.to_string())

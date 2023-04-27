@@ -1,7 +1,10 @@
-class Directory(Entry):
-    directory = []
+from entry import Entry
+import queue
 
-    def __init__(self):
+
+class Directory(Entry):
+    def __init__(self, name):
+        self.directory = []
         self.name = name
 
     def get_name(self):
@@ -17,6 +20,6 @@ class Directory(Entry):
         self.directory.append(entry)
 
     def _print_list(self, prefix):
-        print("prefix" + "/" + self.name)
+        print(prefix + "/" + self.to_string())
         for entry in self.directory:
             entry._print_list(prefix + "/" + self.name)
