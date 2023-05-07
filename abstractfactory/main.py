@@ -34,7 +34,7 @@ def main():
     traysearch.add(excite)
     traysearch.add(google)
 
-    page = factory.create_page("TablePage", "川口輝太")
+    page = factory.create_page("TablePage", "個人名")
     page.add(traynews)
     page.add(traysearch)
 
