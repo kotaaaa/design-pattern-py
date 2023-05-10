@@ -1,3 +1,5 @@
+from display import Display
+
 class StringDisplay(Display):
     def __init__(self, string):
         self.string = string

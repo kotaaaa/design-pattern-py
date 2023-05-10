@@ -15,5 +15,5 @@ class Display(metaclass=ABCMeta):
         pass
 
     def show(self):
-        for i in self.get_rows():
+        for i in range(self.get_rows()):
             print(self.get_row_text(i))
