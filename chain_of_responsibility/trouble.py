@@ -6,5 +6,5 @@ class Trouble():
         return self.number
 
     def to_string(self):
-        return "[Trouble ]" + number + "]"
+        return "[Trouble]" + number + "]"
 
