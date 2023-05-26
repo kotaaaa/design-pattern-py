@@ -4,11 +4,11 @@ from abc import ABCMeta, abstractmethod
 class Support(metaclass=ABCMeta):
     def __init__(self, name):
         self.name = name
-    
+
     def set_next(self, next):
         self.next = next
         return self.next
-    
+
     def support(trouble):
         if self.resolve(trouble):
             done(trouble)
@@ -18,7 +18,7 @@ class Support(metaclass=ABCMeta):
             self.fail(trouble)
 
     def to_string(self):
-        return "[" + self.name +"]"
+        return "[" + self.name + "]"
 
     @abstractmethod
     def resolve(self):
