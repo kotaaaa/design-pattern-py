@@ -1,4 +1,4 @@
-class Trouble():
+class Trouble:
     def __init__(self, number):
         self.number = number
 
@@ -6,5 +6,4 @@ class Trouble():
         return self.number
 
     def to_string(self):
-        return "[Trouble]" + number + "]"
-
+        return "[Trouble] " + number + "]"
