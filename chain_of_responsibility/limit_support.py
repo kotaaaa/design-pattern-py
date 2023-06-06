@@ -1,5 +1,6 @@
 from support import Support
 
+
 class LimitSupport(Support):
     def __init__(self, name, limit):
         super().__init__(caption)
