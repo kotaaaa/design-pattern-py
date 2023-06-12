@@ -29,4 +29,4 @@ class Support(metaclass=ABCMeta):
         print(trouble.to_string() + " is resolved by " + self.name + ".")
 
     def fail(self, trouble):
-        print(trouble.to_string(), " cannot be resolved.")
+        print(trouble.to_string(), " cannot be resolved. ")
