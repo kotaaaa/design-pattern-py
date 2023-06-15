@@ -11,7 +11,7 @@ def main():
     # if len(args) != 2:
     alice = NoSupport("Alice")
     bob = LimitSupport("Bob", 100)
-    charlie = SpecialSupport("Charlie", 429)
+    charlie = SpecialSupport("Tom", 429)
     elmo = OddSupport("Elmo")
     fred = LimitSupport("Fred", 300)
 
