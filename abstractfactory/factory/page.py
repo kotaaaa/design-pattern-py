@@ -14,7 +14,7 @@ class Page:
         filename = self.title + ".html"
         with open(filename, "w") as f:
             f.write(self.make_html())
-            print(filename + "を作成しました。")
+            print(filename + "を作成しました.")
 
     @abstractmethod
     def make_html(self):
