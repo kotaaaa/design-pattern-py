@@ -22,7 +22,7 @@ def main():
         director = Director(html_builder)
         director.construct()
         filename = html_builder.get_result()
-        print(filename + "が作成されました。")
+        print(filename + "が作成されました.")
     else:
         usage()
         exit(0)
