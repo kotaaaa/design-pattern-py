@@ -19,7 +19,7 @@ def main():
         nexthand1 = player1.next_hand()
         nexthand2 = player2.next_hand()
         if nexthand1.is_stronger_than(nexthand2):
-            print("Winner:", player1.to_string())
+            print("Winner: ", player1.to_string())
             player1.win()
             player2.lose()
         elif nexthand2.is_stronger_than(nexthand1):
