@@ -23,7 +23,7 @@ def main():
             player1.win()
             player2.lose()
         elif nexthand2.is_stronger_than(nexthand1):
-            print("Winner:", player2.to_string())
+            print("Winner: ", player2.to_string())
             player1.lose()
             player2.win()
         else:
