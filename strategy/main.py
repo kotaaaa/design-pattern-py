@@ -27,7 +27,7 @@ def main():
             player1.lose()
             player2.win()
         else:
-            print("Even.. ")
+            print("Even..")
             player1.even()
             player2.even()
     print("Total result: ")
