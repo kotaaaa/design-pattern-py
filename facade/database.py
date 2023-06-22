@@ -8,6 +8,7 @@ class Database:
     def get_proprties(dbname):
         prop = configparser.ConfigParser()
         filename = dbname + ".txt"
+
         try:
             prop.read(filename)
         except Exception:

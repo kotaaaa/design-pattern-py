@@ -3,24 +3,23 @@ class HtmlWriter:
         self.writer = writer
 
     def title(self, title):
-        self.writer.write("<html>")
-        self.writer.write("<head>")
-        self.writer.write("<title>" + title + "</title>")
-        self.writer.write("</head>")
+        self.writer.write("<html>\n")
+        self.writer.write("<head>\n")
+        self.writer.write("<title>" + title + "</title>\n")
+        self.writer.write("</head>\n")
         self.writer.write("<body>\n")
-        self.writer.write("<h1>" + title + "<h1>")
-        self.writer.write("<html>")
+        self.writer.write("<h1>" + title + "</h1>\n")
 
     def paragraph(self, msg):
-        self.writer("<p>" + msg + "</p>\n")
+        self.writer.write("<p>" + msg + "</p>\n")
 
-    def link(href, caption):
-        paragraph('<a href="' + href + '">' + caption + "</a>")
+    def link(self, href, caption):
+        self.paragraph('<a href="' + href + '">' + caption + "</a>\n")
 
     def mailto(self, mailaddr, username):
-        link("mailto: " + mailaddr, username)
+        self.link("mailto: " + mailaddr, username)
 
     def close(self):
-        writer.write("</body>")
-        writer.write("</html>\n")
-        writer.close()
+        self.writer.write("</body>\n")
+        self.writer.write("</html>\n")
+        self.writer.close()
