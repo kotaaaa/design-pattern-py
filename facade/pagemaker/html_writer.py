@@ -17,7 +17,7 @@ class HtmlWriter:
         self.paragraph('<a href="' + href + '">' + caption + "</a>\n")
 
     def mailto(self, mailaddr, username):
-        self.link("mailto: " + mailaddr, username)
+        self.link("mailto:  " + mailaddr, username)
 
     def close(self):
         self.writer.write("</body>\n")
