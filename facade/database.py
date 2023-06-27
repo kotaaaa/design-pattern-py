@@ -12,5 +12,5 @@ class Database:
         try:
             prop.read(filename)
         except Exception:
-            print("Warning: " + filename + " is not found.")
+            print("Warning: " + filename + " is not found")
         return prop
