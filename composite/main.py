@@ -19,7 +19,7 @@ def main():
         rootdir.print_list()
 
         print("")
-        print("Making user entries..")
+        print("Making user entries...")
         yuki = Directory("yuki")
         hanako = Directory("hanako")
         tomura = Directory("tomura")
