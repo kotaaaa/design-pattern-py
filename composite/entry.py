@@ -12,7 +12,7 @@ class Entry(metaclass=ABCMeta):
         pass
 
     def add(self, entry):
-        raise FileTreatmentException("Error: Don't use add method to File object!")
+        raise FileTreatmentException("Error: Don't use add method to File object!!")
 
     def print_list(self):
         self._print_list("")
