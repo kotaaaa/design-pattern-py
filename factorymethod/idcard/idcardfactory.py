@@ -6,7 +6,6 @@ from idcard.idcard import IDCard
 
 class IDCardFactory(Factory):
     def __init__(self):
-        # self.lock = RLock()
         self.database = {}
         self.serial = 100
 
